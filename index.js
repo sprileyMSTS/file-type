@@ -644,5 +644,12 @@ module.exports = input => {
 		};
 	}
 
+	if (check([0x3C, 0x3F, 0x78, 0x6D, 0x6C])) {
+		return {
+			ext: 'xml',
+			mime: 'application/xml'
+		};
+	}
+
 	return null;
 };
